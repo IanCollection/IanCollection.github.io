@@ -22,11 +22,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta property="og:type" content="website">
-  <meta property="og:title" content="IS445 Jekyll Template">
+  <meta property="og:title" content="Blog">
   <meta property="og:description" content="I am definitely not a corgi!">
   <meta property="og:image" content="https://i0.wp.com/www.threecorgis.com///wp-content/uploads/2014/09/three_corgis618-1-1.jpg">
 
-  <title>IS445 Jekyll Template</title>
+  <title>Blog</title>
   <meta name="description" content="I am definitely not a corgi!">
 
   <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
@@ -62,7 +62,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto"><a class="nav-item nav-link " href="/projects/">Projects</a>
 
-      <a class="nav-item nav-link " href="/blog/">Blog</a>
+      <a class="nav-item nav-link active" href="/blog/">Blog</a>
 
       <a class="nav-item nav-link " href="/about/">About</a>
 
@@ -73,22 +73,55 @@
   </div>
 
 </nav>
-    <div class="row justify-content-center align-items-center p-4">
-  <div class="col-lg-4 col-md-6 text-center mt-4">
+    <!-- Simple-Jekyll-Search https://github.com/christian-fei/Simple-Jekyll-Search -->
 
-    <!-- Fine Circle Responsive Image -->
-    <div id="container" class="my-2">
-      <div id="dummy"></div>
-      <div id="element">
-        <img src="https://i0.wp.com/www.threecorgis.com///wp-content/uploads/2014/09/three_corgis618-1-1.jpg" alt="IS445 Jekyll Template" class="circle-image wow animated zoomIn" data-wow-delay=".1s" />
-      </div>
-    </div>
-
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">I am definitely not a corgi!</p>
-
+<div class="input-group mt-5 px-3">
+  <input id="search-input" type="text" class="form-control search-box" placeholder="Search posts..">
+  <div class="input-group-append">
+    <span class="input-group-text border border-primary bg-primary text-white">
+      <i class="fas fa-search"></i>
+    </span>
   </div>
+  <button class="btn btn-outline-primary ml-1" onclick="location.href = '/blog/tags';">
+    <i class="fas fa-tags"></i>
+  </button>
 </div>
+<ul class="px-3" id="results-container"></ul>
 
+<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
+<script>
+  var sjs = SimpleJekyllSearch({
+        searchInput: document.getElementById('search-input'),
+        resultsContainer: document.getElementById('results-container'),
+        searchResultTemplate: '<a href="{url}" class="list-group-item list-group-item-action">{title}</a>',
+        noResultsText: '<li class="list-group-item list-group-item-action disabled">No results found</li>',
+        json: '/search.json'
+      })
+</script>
+<div class="card-group mt-2">
+
+  
+    <div class="col-lg-6 my-3 wow animated fadeIn" data-wow-delay=".15s">
+  <a href="/blog/hello-blog-world" class="post card bg-secondary">
+    <div class="card-body text-white">
+      <h3 class="card-title">The Hello World of Blogs</h3>
+      <p class="card-text">
+        
+        <span class="badge badge-light text-secondary">Technology</span>
+        
+        <span class="badge badge-light text-secondary">Blogging</span>
+        
+      </p>
+      <p class="card-text">This is a blog post to get you started.</p>
+    </div>
+    <div class="card-footer text-white">
+      22 August 2022
+    </div>
+  </a>
+</div>
+  
+  
+</div>
   </main>
   <footer class="mt-auto py-3 text-center">
 
