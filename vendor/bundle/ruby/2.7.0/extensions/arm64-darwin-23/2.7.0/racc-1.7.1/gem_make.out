@@ -1,0 +1,20 @@
+current directory: /Users/linxuanxuan/Downloads/IanColletion.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+/Users/linxuanxuan/.rbenv/versions/2.7.4/bin/ruby extconf.rb
+checking for rb_block_call()... yes
+checking for rb_ary_subseq()... yes
+creating Makefile
+
+current directory: /Users/linxuanxuan/Downloads/IanColletion.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231009-53550-w6k9ac sitelibdir\=./.gem.20231009-53550-w6k9ac clean
+
+current directory: /Users/linxuanxuan/Downloads/IanColletion.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231009-53550-w6k9ac sitelibdir\=./.gem.20231009-53550-w6k9ac
+compiling cparse.c
+linking shared-object racc/cparse.bundle
+
+current directory: /Users/linxuanxuan/Downloads/IanColletion.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231009-53550-w6k9ac sitelibdir\=./.gem.20231009-53550-w6k9ac install
+/opt/homebrew/bin/ginstall -c -m 0755 cparse.bundle ./.gem.20231009-53550-w6k9ac/racc
+
+current directory: /Users/linxuanxuan/Downloads/IanColletion.github.io/vendor/bundle/ruby/2.7.0/gems/racc-1.7.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20231009-53550-w6k9ac sitelibdir\=./.gem.20231009-53550-w6k9ac clean
